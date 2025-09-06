@@ -81,12 +81,12 @@
             sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
-        layer_6 {
+        Mouse-Control {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp K_MUTE  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans
+&trans  &kp ESCAPE  &kp C_VOL_DN  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans        &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans        &trans  &trans  &trans  &kp K_MUTE  &trans  &trans  &trans  &trans  &trans  &trans
+                    &trans        &trans  &trans  &trans              &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
