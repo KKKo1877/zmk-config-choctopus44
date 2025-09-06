@@ -66,15 +66,19 @@
 &kp LSHFT          &kp Z  &kp X  &kp C  &kp V  &kp B      &kp N  &kp N          &kp M      &kp COMMA         &kp DOT  &kp FSLH  &kp RGUI
                           &none  &to 0  &mo 6  &kp SPACE         &kp BACKSPACE  &kp ENTER  &kp LEFT_BRACKET  &none
             >;
+
+            sensor-bindings = <&inc_dec_kp LANGUAGE_1 LANGUAGE_2>;
         };
 
-        layer_5 {
+        Number-Layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans             &kp MINUS  &trans  &trans  &trans   &trans  &trans
+&kp N0  &kp N1  &kp N2  &kp N3  &kp N4  &trans             &trans     &kp N5  &kp N6  &kp N7   &kp N8  &kp N9
+&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans  &kp DOT  &trans  &trans
+                &trans  &trans  &trans  &kp SPACE          &kp BSPC   &trans  &trans  &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         layer_6 {
