@@ -36,7 +36,7 @@
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         };
 
-        raise_layer {
+        Symbol-Layer {
             bindings = <
 &trans     &kp RA(N8)       &kp RA(N9)           &kp UP               &kp LS(N8)  &kp LS(N9)              &kp LS(FSLH)         &kp FSLH         &kp UP      &kp RBKT    &kp LS(RBKT)   &kp RA(RBKT)
 &kp GRAVE  &kp LS(EQUAL)    &kp LEFT             &kp DOWN             &kp RIGHT   &kp EQUAL               &kp RA(MINUS)        &kp LEFT         &kp DOWN    &kp RIGHT   &kp LS(MINUS)  &kp RA(N4)
