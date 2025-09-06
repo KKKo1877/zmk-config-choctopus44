@@ -38,10 +38,10 @@
 
         Symbol-Layer {
             bindings = <
-&none  &kp AMPS   &kp FSLH         &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS              &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp COLON   &kp SEMI    &kp PLUS   &none
-&none  &kp HASH   &kp NON_US_BSLH  &kp TILDE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET                  &kp DOLLAR      &kp RIGHT_SHIFT  &kp RGUI    &kp RALT    &kp RCTRL  &none
-&none  &kp ASTRK  &kp PERCENT      &kp CARET  &kp LT                &kp GREATER_THAN       &kp C_MUTE  &kp MINUS       &kp UNDER        &kp LS(N5)  &kp LS(N6)  &kp EQUAL  &none
-                  &none            &to 0      &trans                &trans                             &trans          &trans           &to 1       &none
+&none  &kp AMPS   &kp FSLH         &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS              &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp COLON         &kp SEMI           &kp PLUS   &none
+&none  &kp HASH   &kp NON_US_BSLH  &kp TILDE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET                  &kp DOLLAR      &kp RIGHT_SHIFT  &kp RGUI          &kp RALT           &kp RCTRL  &none
+&none  &kp ASTRK  &kp PERCENT      &kp CARET  &kp LT                &kp GREATER_THAN       &kp C_MUTE  &kp MINUS       &kp UNDER        &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EQUAL  &none
+                  &none            &to 0      &trans                &trans                             &trans          &trans           &to 1             &none
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
