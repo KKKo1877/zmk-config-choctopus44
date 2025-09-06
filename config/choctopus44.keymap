@@ -38,9 +38,9 @@
 
         Symbol-Layer {
             bindings = <
-&none  &kp AMPS   &kp FSLH         &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS              &kp LS(FSLH)         &kp FSLH         &kp UP      &kp RBKT    &kp LS(RBKT)   &kp RA(RBKT)
-&none  &kp HASH   &kp NON_US_BSLH  &kp TILDE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET                  &kp RA(MINUS)        &kp LEFT         &kp DOWN    &kp RIGHT   &kp LS(MINUS)  &kp RA(N4)
-&none  &kp ASTRK  &kp PERCENT      &kp CARET  &kp LT                &kp GREATER_THAN       &kp C_MUTE  &kp LS(NON_US_HASH)  &kp NON_US_HASH  &kp LS(N5)  &kp LS(N6)  &kp LS(N7)     &trans
+&none  &kp AMPS   &kp FSLH         &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS              &kp LEFT_BRACE       &kp RIGHT_BRACE  &kp COLON   &kp SEMI    &kp QUESTION   &none
+&none  &kp HASH   &kp NON_US_BSLH  &kp TILDE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET                  &kp DOLLAR           &kp RIGHT_SHIFT  &kp RGUI    &kp RALT    &kp LS(MINUS)  &none
+&none  &kp ASTRK  &kp PERCENT      &kp CARET  &kp LT                &kp GREATER_THAN       &kp C_MUTE  &kp LS(NON_US_HASH)  &kp NON_US_HASH  &kp LS(N5)  &kp LS(N6)  &kp LS(N7)     &none
                   &none            &to 0      &trans                &trans                             &trans               &trans           &to 1       &none
             >;
 
