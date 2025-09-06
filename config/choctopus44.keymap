@@ -83,10 +83,10 @@
 
         Mouse-Control {
             bindings = <
-&trans  &kp ESCAPE  &kp C_VOL_DN   &kp F12        &kp C_VOLUME_UP  &kp C_MUTE                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT    &kp DOWN       &kp UP_ARROW   &kp RIGHT        &sk LEFT_SHIFT              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &kp RC(RG(Q))  &kp LS(LG(S))  &trans           &kp RG(RIGHT)   &kp K_MUTE  &trans  &trans  &trans  &trans  &trans  &trans
-                    &trans         &trans         &trans           &trans                      &trans  &trans  &trans  &trans
+&trans  &kp ESCAPE  &kp C_VOL_DN   &kp F12        &kp C_VOLUME_UP  &kp C_MUTE                  &kp K_SCROLL_DOWN  &trans         &trans         &trans        &trans        &trans
+&trans  &kp LEFT    &kp DOWN       &kp UP_ARROW   &kp RIGHT        &sk LEFT_SHIFT              &kp RC(F3)         &trans         &trans         &trans        &trans        &trans
+&trans  &trans      &kp RC(RG(Q))  &kp LS(LG(S))  &trans           &kp RG(RIGHT)   &kp K_MUTE  &trans             &kp LC(RIGHT)  &kp RS(RIGHT)  &kp RS(LEFT)  &kp LC(LEFT)  &trans
+                    &trans         &trans         &trans           &trans                      &trans             &trans         &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
