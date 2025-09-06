@@ -61,10 +61,10 @@
 
         Chinese-Layer {
             bindings = <
-&kp ESC            &kp Q  &kp W  &kp E  &kp R  &kp T             &kp Y          &kp U      &kp I             &kp O    &kp P     &kp RBKT
-&kp LC(BACKSPACE)  &kp A  &kp S  &kp D  &kp F  &kp G             &kp H          &kp J      &kp K             &kp L    &kp SEMI  &kp APOS
-&kp LSHFT          &kp Z  &kp X  &kp C  &kp V  &kp B      &kp N  &kp N          &kp M      &kp COMMA         &kp DOT  &kp FSLH  &kp RGUI
-                          &none  &to 0  &mo 6  &kp SPACE         &kp BACKSPACE  &kp ENTER  &kp LEFT_BRACKET  &none
+&kp ESC            &kp Q  &kp W  &kp E  &kp R  &kp T              &kp Y          &kp U      &kp I             &kp O    &kp P     &kp RBKT
+&kp LC(BACKSPACE)  &kp A  &kp S  &kp D  &kp F  &kp G              &kp H          &kp J      &kp K             &kp L    &kp SEMI  &kp APOS
+&kp LSHFT          &kp Z  &kp X  &kp C  &kp V  &kp B      &trans  &kp N          &kp M      &kp COMMA         &kp DOT  &kp FSLH  &kp RGUI
+                          &none  &to 0  &mo 6  &kp SPACE          &kp BACKSPACE  &kp ENTER  &kp LEFT_BRACKET  &none
             >;
 
             sensor-bindings = <&inc_dec_kp LANGUAGE_1 LANGUAGE_2>;
@@ -72,10 +72,10 @@
 
         Number-Layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans             &kp MINUS  &trans  &trans  &trans   &trans  &trans
-&kp N0  &kp N1  &kp N2  &kp N3  &kp N4  &trans             &trans     &kp N5  &kp N6  &kp N7   &kp N8  &kp N9
-&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans  &kp DOT  &trans  &trans
-                &trans  &trans  &trans  &kp SPACE          &kp BSPC   &trans  &trans  &trans
+&none   &none   &none   &none   &none   &none              &kp MINUS  &none   &none   &none    &none   &none
+&kp N0  &kp N1  &kp N2  &kp N3  &kp N4  &none              &none      &kp N5  &kp N6  &kp N7   &kp N8  &kp N9
+&none   &none   &none   &none   &none   &none      &trans  &none      &none   &none   &kp DOT  &none   &none
+                &none   &none   &none   &kp SPACE          &kp BSPC   &none   &none   &none
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>;
@@ -83,11 +83,13 @@
 
         layer_6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp K_MUTE  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
 };
