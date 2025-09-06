@@ -38,10 +38,10 @@
 
         Symbol-Layer {
             bindings = <
-&none  &kp AMPS   &kp FSLH         &kp GRAVE  &kp LS(N8)  &kp LS(N9)              &kp LS(FSLH)         &kp FSLH         &kp UP      &kp RBKT    &kp LS(RBKT)   &kp RA(RBKT)
-&none  &kp HASH   &kp NON_US_BSLH  &kp TILDE  &kp RIGHT   &kp EQUAL               &kp RA(MINUS)        &kp LEFT         &kp DOWN    &kp RIGHT   &kp LS(MINUS)  &kp RA(N4)
-&none  &kp ASTRK  &kp PERCENT      &kp CARET  &kp RA(N7)  &kp RA(N0)  &kp C_MUTE  &kp LS(NON_US_HASH)  &kp NON_US_HASH  &kp LS(N5)  &kp LS(N6)  &kp LS(N7)     &trans
-                  &trans           &trans     &mo 3       &trans                  &trans               &trans           &trans      &trans
+&none  &kp AMPS   &kp FSLH         &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS              &kp LS(FSLH)         &kp FSLH         &kp UP      &kp RBKT    &kp LS(RBKT)   &kp RA(RBKT)
+&none  &kp HASH   &kp NON_US_BSLH  &kp TILDE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET                  &kp RA(MINUS)        &kp LEFT         &kp DOWN    &kp RIGHT   &kp LS(MINUS)  &kp RA(N4)
+&none  &kp ASTRK  &kp PERCENT      &kp CARET  &kp LT                &kp GREATER_THAN       &kp C_MUTE  &kp LS(NON_US_HASH)  &kp NON_US_HASH  &kp LS(N5)  &kp LS(N6)  &kp LS(N7)     &trans
+                  &trans           &trans     &mo 3                 &trans                             &trans               &trans           &trans      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
