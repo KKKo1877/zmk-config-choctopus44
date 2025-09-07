@@ -94,7 +94,7 @@
 &kp ESC            &kp Z  &kp L      &kp D        &kp C  &kp V               &kp J     &kp F      &kp O      &kp U     &kp SEMI  &kp TAB
 &kp LC(BACKSPACE)  &kp N  &kp R      &kp T        &kp S  &kp G               &kp Y     &kp H      &kp A      &kp E     &kp I     &kp MINUS
 &kp DELETE         &kp X  &kp Q      &kp M        &kp W  &kp B      &kp RET  &kp K     &kp P      &kp COMMA  &kp DOT   &kp FSLH  &kp LEFT_SHIFT
-                          &kp LCTRL  &key_repeat  &mo 6  &kp SPACE           &kp BSPC  &kp ENTER  &mo 1      &kp RALT
+                          &kp LCTRL  &key_repeat  &mo 6  &kp SPACE           &kp BSPC  &kp ENTER  &to 1      &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;
