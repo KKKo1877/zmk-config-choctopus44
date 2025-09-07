@@ -7,7 +7,7 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-      - name: zmk-smart-toggle
+    - name: zmk-smart-toggle
       remote: caksoylar
       revision: main
     - name: zmk-leader-key
