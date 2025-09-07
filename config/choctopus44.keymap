@@ -405,8 +405,6 @@
             compatible = "zmk,behavior-smart-toggle";
             #binding-cells = <0>;
             bindings = <&kp RGUI>, <&kp TAB>;
-
-            ignored-key-positions = <20 29 31>;
             label = "SWAPPER";
         };
 
