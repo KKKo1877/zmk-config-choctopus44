@@ -405,6 +405,7 @@
             compatible = "zmk,behavior-smart-toggle";
             #binding-cells = <0>;
             bindings = <&kp RGUI>, <&kp TAB>;
+
             label = "SWAPPER";
         };
 
@@ -506,7 +507,7 @@
                                  &none   &none     &none      &kp SPACE          &kp BSPC   &none        &none      &none
             >;
 
-            sensor-bindings = <&inc_dec_kp 0 0>;
+            sensor-bindings = <&inc_dec_kp LS(J) LS(K)>;
         };
 
         Mouse-Control {
