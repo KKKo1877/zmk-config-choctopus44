@@ -100,10 +100,6 @@
         };
     };
 
-    &kscan0 {
-        debounce-period = <20>;
-    };
-
     behaviors {
         hold_shift: hold_shift {
             compatible = "zmk,behavior-smart-toggle";
