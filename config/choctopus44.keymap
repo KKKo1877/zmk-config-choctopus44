@@ -111,7 +111,7 @@
         };
 
         combo-lockscreen {
-            bindings = <&kp C_AL_LOGOFF>;
+            bindings = <&kp LG(L)>;
             key-positions = <7 8 9>;
         };
 
