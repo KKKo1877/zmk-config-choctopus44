@@ -119,6 +119,11 @@
             bindings = <&bt BT_CLR>;
             key-positions = <0 29>;
         };
+
+        combo-winswap {
+            bindings = <&kp LG(LA(TAB))>;
+            key-positions = <4 3 2>;
+        };
     };
 
     behaviors {
