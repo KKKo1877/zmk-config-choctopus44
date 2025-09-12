@@ -110,8 +110,8 @@
             key-positions = <27 14>;
         };
 
-        combo-lockscreen {
-            bindings = <&kp LG(L)>;
+        combo-winswap {
+            bindings = <&kp LG(LA(TAB))>;
             key-positions = <7 8 9>;
         };
 
@@ -120,8 +120,8 @@
             key-positions = <0 29>;
         };
 
-        combo-winswap {
-            bindings = <&kp LG(LA(TAB))>;
+        combo-winlock {
+            bindings = <&kp LG(L)>;
             key-positions = <4 3 2>;
         };
     };
