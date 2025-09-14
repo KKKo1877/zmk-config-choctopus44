@@ -461,10 +461,10 @@
 
         Default {
             bindings = <
-&kp ESC            &kp Z                  &kp L           &kp D           &kp C             &kp V                &kp J       &kp F              &kp O            &kp U            &kp SEMI     &kp TAB
-&kp LC(BACKSPACE)  &hm LEFT_CONTROL N     &hm LEFT_ALT R  &hm LEFT_GUI T  &hm LEFT_SHIFT S  &ht_hl 5 G           &ht_hl 5 I  &hm RIGHT_SHIFT H  &hm RIGHT_GUI A  &hm RIGHT_ALT E  &hm RCTRL Y  &kp MINUS
-&kp DELETE         &left_taphold LC(X) X  &kp Q           &kp M           &kp W             &kp B       &kp RET  &kp K       &kp P              &kp COMMA        &kp DOT          &kp FSLH     &kp LEFT_SHIFT
-                                          &kp LCTRL       &key_repeat     &mo 6             &kp SPACE            &kp BSPC    &kp ENTER          &to 1            &kp RALT
+&kp ESC            &kp Z                  &kp L           &kp D           &kp C             &kp V                &kp SINGLE_QUOTE  &kp F              &kp O            &kp U            &kp J        &kp TAB
+&kp LC(BACKSPACE)  &hm LEFT_CONTROL N     &hm LEFT_ALT R  &hm LEFT_GUI T  &hm LEFT_SHIFT S  &ht_hl 5 G           &ht_hl 5 Y        &hm RIGHT_SHIFT H  &hm RIGHT_GUI A  &hm RIGHT_ALT E  &hm RCTRL I  &kp DOUBLE_QUOTES
+&kp DELETE         &left_taphold LC(X) X  &kp Q           &kp M           &kp W             &kp B       &kp RET  &kp K             &kp P              &kp SEMI         &kp MINUS        &kp FSLH     &kp LEFT_SHIFT
+                                          &kp COMMA       &key_repeat     &mo 6             &kp SPACE            &kp BSPC          &kp ENTER          &to 1            &kp DOT
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;
