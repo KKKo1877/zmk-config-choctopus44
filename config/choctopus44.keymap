@@ -50,24 +50,9 @@
             key-positions = <25 26 27 35 34 33>;
         };
 
-        combo_del {
-            bindings = <&kp DELETE>;
-            key-positions = <25 26>;
-        };
-
-        combo_dqt {
-            bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <6 7>;
-        };
-
         cmb_bspLine {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <13 14>;
-        };
-
-        combo-ecs {
-            bindings = <&kp ESCAPE>;
-            key-positions = <1 2>;
         };
 
         combo-capslock {
