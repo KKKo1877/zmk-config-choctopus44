@@ -512,10 +512,10 @@
 
         Mouse-Control {
             bindings = <
-&none  &kp ESCAPE                     &kp C_VOL_DN   &kp F12        &kp C_VOLUME_UP  &kp C_MUTE                  &msc SCRL_DOWN  &mkp MB1        &kp F1          &mkp MB2      &mkp MB3         &none
-&none  &kp LEFT                       &kp DOWN       &kp UP_ARROW   &kp RIGHT        &sk LEFT_SHIFT              &kp RC(F3)      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
-&none  &left_taphold RG(GRAVE) GRAVE  &kp RC(RG(Q))  &kp LS(LG(S))  &swapper         &kp RG(RIGHT)   &kp K_MUTE  &msc SCRL_UP    &kp LC(RIGHT)   &kp RS(RIGHT)   &kp RS(LEFT)  &kp LC(LEFT)     &none
-                                      &none          &trans         &trans           &trans                      &trans          &trans          &trans          &none
+&none  &kp ESCAPE                     &kp C_VOL_DN   &kp F12        &kp C_VOLUME_UP  &kp C_MUTE                 &msc SCRL_DOWN  &mkp MB1        &kp F1          &mkp MB2      &mkp MB3         &none
+&none  &kp LEFT                       &kp DOWN       &kp UP_ARROW   &kp RIGHT        &sk PAGE_UP                &kp RC(F3)      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
+&none  &left_taphold RG(GRAVE) GRAVE  &kp RC(RG(Q))  &kp LS(LG(S))  &swapper         &kp PAGE_DOWN  &kp K_MUTE  &msc SCRL_UP    &kp LC(RIGHT)   &kp RS(RIGHT)   &kp RS(LEFT)  &kp LC(LEFT)     &none
+                                      &none          &trans         &trans           &trans                     &trans          &trans          &trans          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
