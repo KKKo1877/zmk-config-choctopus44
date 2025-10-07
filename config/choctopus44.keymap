@@ -441,10 +441,10 @@
 
         Default {
             bindings = <
-&kp ESC            &kp Z                  &kp L           &kp D           &kp C             &kp V                &kp SINGLE_QUOTE  &kp F              &kp O            &kp U            &kp J        &kp TAB
-&kp LC(BACKSPACE)  &hm LEFT_CONTROL N     &hm LEFT_ALT R  &hm LEFT_GUI T  &hm LEFT_SHIFT S  &ht_hl 5 G           &ht_hl 5 Y        &hm RIGHT_SHIFT H  &hm RIGHT_GUI A  &hm RIGHT_ALT E  &hm RCTRL I  &kp RIGHT_CONTROL
-&kp DELETE         &left_taphold LC(X) X  &kp Q           &kp M           &kp W             &kp B       &kp RET  &kp K             &kp P              &kp SEMI         &kp MINUS        &kp FSLH     &kp LEFT_SHIFT
-                                          &kp COMMA       &key_repeat     &mo 6             &kp SPACE            &kp BSPC          &kp ENTER          &to 1            &kp DOT
+&kp ESC            &kp Z                  &kp L           &kp D           &kp C             &kp V                   &kp SINGLE_QUOTE  &kp F              &kp O            &kp U            &kp J        &kp TAB
+&kp LC(BACKSPACE)  &hm LEFT_CONTROL N     &hm LEFT_ALT R  &hm LEFT_GUI T  &hm LEFT_SHIFT S  &ht_hl 5 G              &ht_hl 5 Y        &hm RIGHT_SHIFT H  &hm RIGHT_GUI A  &hm RIGHT_ALT E  &hm RCTRL I  &kp RIGHT_CONTROL
+&kp DELETE         &left_taphold LC(X) X  &kp Q           &kp M           &kp W             &kp B       &kp K_MUTE  &kp K             &kp P              &kp SEMI         &kp MINUS        &kp FSLH     &kp LEFT_SHIFT
+                                          &kp COMMA       &key_repeat     &mo 6             &kp SPACE               &kp BSPC          &kp ENTER          &to 1            &kp DOT
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;
@@ -496,10 +496,10 @@
 
         Number-Layer {
             bindings = <
-&kp RIGHT_PARENTHESIS  &kp EXCL   &kp AT     &kp HASH   &kp POUND  &kp PLUS           &kp MINUS  &kp PERCENT    &kp CARET    &kp AMPS  &kp ASTRK  &kp LEFT_PARENTHESIS
-&kp N0                 &kp N1     &kp N2     &kp N3     &kp N4     &trans             &trans     &kp N5         &kp N6       &kp N7    &kp N8     &kp N9
-&kp LG(LEFT)           &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)  &trans  &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp DOT   &kp END    &kp LG(RIGHT)
-                                  &none      &none      &none      &kp SPACE          &kp BSPC   &none          &none        &none
+&kp RIGHT_PARENTHESIS  &kp EXCL   &kp AT     &kp HASH   &kp POUND  &kp PLUS             &kp MINUS  &kp PERCENT    &kp CARET    &kp AMPS  &kp ASTRK  &kp LEFT_PARENTHESIS
+&kp N0                 &kp N1     &kp N2     &kp N3     &kp N4     &trans               &trans     &kp N5         &kp N6       &kp N7    &kp N8     &kp N9
+&kp LG(LEFT)           &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)  &kp CAPS  &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp DOT   &kp END    &kp LG(RIGHT)
+                                  &none      &none      &none      &kp SPACE            &kp BSPC   &none          &none        &none
             >;
 
             sensor-bindings = <&inc_dec_kp LS(J) LS(K)>;
@@ -507,10 +507,10 @@
 
         Mouse-Control {
             bindings = <
-&none  &kp ESCAPE                     &kp C_VOL_DN   &kp F12        &kp C_VOLUME_UP  &kp C_MUTE                 &msc SCRL_DOWN  &mkp MB1        &kp F1          &mkp MB2      &mkp MB3         &none
-&none  &kp LEFT                       &kp DOWN       &kp UP_ARROW   &kp RIGHT        &kp PAGE_UP                &kp RC(F3)      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
-&none  &left_taphold RG(GRAVE) GRAVE  &kp RC(RG(Q))  &kp LS(LG(S))  &swapper         &kp PAGE_DOWN  &kp K_MUTE  &msc SCRL_UP    &kp LC(RIGHT)   &kp RS(RIGHT)   &kp RS(LEFT)  &kp LC(LEFT)     &none
-                                      &none          &trans         &trans           &trans                     &trans          &trans          &trans          &none
+&none  &kp ESCAPE                     &kp C_VOL_DN   &kp F12        &kp C_VOLUME_UP  &kp C_MUTE               &msc SCRL_DOWN  &mkp MB1        &kp F1          &mkp MB2      &mkp MB3         &none
+&none  &kp LEFT                       &kp DOWN       &kp UP_ARROW   &kp RIGHT        &kp PAGE_UP              &kp RC(F3)      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
+&none  &left_taphold RG(GRAVE) GRAVE  &kp RC(RG(Q))  &kp LS(LG(S))  &swapper         &kp PAGE_DOWN  &kp C_PP  &msc SCRL_UP    &kp LC(RIGHT)   &kp RS(RIGHT)   &kp RS(LEFT)  &kp LC(LEFT)     &none
+                                      &none          &trans         &trans           &trans                   &trans          &trans          &trans          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
