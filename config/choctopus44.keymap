@@ -104,16 +104,6 @@
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <5 17>;
         };
-
-        combo-layer5L {
-            bindings = <&to 5>;
-            key-positions = <27 28>;
-        };
-
-        combo-layer5R {
-            bindings = <&to 5>;
-            key-positions = <32 33>;
-        };
     };
 
     behaviors {
