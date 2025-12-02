@@ -442,7 +442,7 @@
         Default {
             bindings = <
 &kp ESC            &kp Z  &kp L      &kp D  &kp C  &kp V                  &kp SINGLE_QUOTE  &kp F      &kp O     &kp U      &kp J      &kp TAB
-&kp LC(BACKSPACE)  &kp N  &kp R      &kp T  &kp S  &kp G                  &kp Y             &kp H      &kp A     &kp E      &kp I      &kp RIGHT_CONTROL
+&kp LC(BACKSPACE)  &kp N  &kp R      &kp T  &kp S  &kp G                  &kp Y             &kp H      &kp A     &kp E      &kp I      &kp LEFT_CONTROL
 &kp DELETE         &kp X  &kp Q      &kp M  &kp W  &kp B      &kp K_MUTE  &kp K             &kp P      &kp SEMI  &kp MINUS  &kp SLASH  &kp LEFT_SHIFT
                           &kp COMMA  &mo 5  &mo 6  &kp SPACE              &kp BSPC          &kp ENTER  &to 1     &kp DOT
             >;
@@ -507,10 +507,10 @@
 
         Mouse-Control {
             bindings = <
-&kp LEFT_SHIFT  &kp ESCAPE                     &kp C_VOL_DN      &kp F12        &kp C_VOLUME_UP  &kp C_MUTE               &msc SCRL_DOWN  &mkp MB1        &kp F5          &mkp MB2           &mkp MB3         &kp RIGHT_SHIFT
-&kp LEFT_GUI    &kp LEFT                       &kp DOWN          &kp UP_ARROW   &kp RIGHT        &kp PAGE_UP              &kp RC(F3)      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP       &mmv MOVE_RIGHT  &kp RIGHT_GUI
-&kp LEFT_ALT    &left_taphold RG(GRAVE) GRAVE  &kp RC(RG(Q))     &kp LS(LG(S))  &swapper         &kp PAGE_DOWN  &kp C_PP  &msc SCRL_UP    &kp LC(RIGHT)   &kp RS(RIGHT)   &kp RS(LEFT)       &kp LC(LEFT)     &kp RIGHT_ALT
-                                               &kp LEFT_CONTROL  &trans         &trans           &trans                   &trans          &trans          &trans          &kp RIGHT_CONTROL
+&kp RIGHT_COMMAND  &kp ESCAPE                     &kp C_VOL_DN      &kp F12        &kp C_VOLUME_UP  &kp C_MUTE               &msc SCRL_DOWN  &mkp MB1        &kp F5          &mkp MB2           &mkp MB3         &kp LEFT_COMMAND
+&kp RIGHT_ALT      &kp LEFT                       &kp DOWN          &kp UP_ARROW   &kp RIGHT        &kp PAGE_UP              &kp RC(F3)      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP       &mmv MOVE_RIGHT  &kp RIGHT_CONTROL
+&kp LEFT_ALT       &left_taphold RG(GRAVE) GRAVE  &kp RC(RG(Q))     &kp LS(LG(S))  &swapper         &kp PAGE_DOWN  &kp C_PP  &msc SCRL_UP    &kp LC(RIGHT)   &kp RS(RIGHT)   &kp RS(LEFT)       &kp LC(LEFT)     &kp RIGHT_SHIFT
+                                                  &kp LEFT_CONTROL  &trans         &trans           &trans                   &trans          &trans          &trans          &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
