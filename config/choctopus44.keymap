@@ -441,10 +441,10 @@
 
         Default {
             bindings = <
-&kp ESC            &kp Z  &kp L      &kp D  &kp C  &kp V                  &kp SINGLE_QUOTE  &kp F      &kp O           &kp U               &kp J              &kp TAB
-&kp LC(BACKSPACE)  &kp N  &kp R      &kp T  &kp S  &kp G                  &kp Y             &kp H      &kp A           &kp E               &kp I              &kp RIGHT_CONTROL
-&kp DELETE         &kp X  &kp Q      &kp M  &kp W  &kp B      &kp K_MUTE  &kp K             &kp P      &hm LCTRL SEMI  &hm LEFT_ALT MINUS  &hm LEFT_GUI FSLH  &kp LEFT_SHIFT
-                          &kp COMMA  &mo 5  &mo 6  &kp SPACE              &kp BSPC          &kp ENTER  &to 1           &kp DOT
+&kp ESC            &kp Z  &kp L      &kp D  &kp C  &kp V                  &kp SINGLE_QUOTE  &kp F      &kp O     &kp U      &kp J      &kp TAB
+&kp LC(BACKSPACE)  &kp N  &kp R      &kp T  &kp S  &kp G                  &kp Y             &kp H      &kp A     &kp E      &kp I      &kp RIGHT_CONTROL
+&kp DELETE         &kp X  &kp Q      &kp M  &kp W  &kp B      &kp K_MUTE  &kp K             &kp P      &kp SEMI  &kp MINUS  &kp SLASH  &kp LEFT_SHIFT
+                          &kp COMMA  &mo 5  &mo 6  &kp SPACE              &kp BSPC          &kp ENTER  &to 1     &kp DOT
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;
@@ -496,10 +496,10 @@
 
         Number-Layer {
             bindings = <
-&kp RIGHT_PARENTHESIS  &kp EXCL   &kp AT     &kp HASH   &kp DOLLAR  &kp PLUS             &kp MINUS       &kp PERCENT   &kp CARET      &kp AMPS       &kp ASTRK  &kp LEFT_PARENTHESIS
-&kp N0                 &kp N1     &kp N2     &kp N3     &kp N4      &kp AT               &sk LEFT_SHIFT  &kp N5        &kp N6         &kp N7         &kp N8     &kp N9
-&kp LC(W)              &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)   &kp LC(Y)  &kp CAPS  &kp HOME        &kp LG(LEFT)  &kp LG(RIGHT)  &kp LG(LS(T))  &kp END    &kp LG(LS(R))
-                                  &none      &none      &none       &kp SPACE            &kp BSPC        &none         &none          &none
+&kp RIGHT_PARENTHESIS  &kp EXCL   &kp AT     &kp HASH   &kp DOLLAR  &kp PLUS                    &kp MINUS       &kp PERCENT   &kp CARET      &kp AMPS       &kp ASTRK  &kp LEFT_PARENTHESIS
+&kp N0                 &kp N1     &kp N2     &kp N3     &kp N4      &kp LEFT_COMMAND            &sk LEFT_SHIFT  &kp N5        &kp N6         &kp N7         &kp N8     &kp N9
+&kp LC(W)              &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)   &kp LC(Y)         &kp CAPS  &kp HOME        &kp LG(LEFT)  &kp LG(RIGHT)  &kp LG(LS(T))  &kp END    &kp LG(LS(R))
+                                  &none      &none      &none       &kp SPACE                   &kp BSPC        &none         &none          &none
             >;
 
             sensor-bindings = <&inc_dec_kp LS(J) LS(K)>;
