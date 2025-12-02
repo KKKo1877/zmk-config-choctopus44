@@ -40,11 +40,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo-Lshift {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <6 18>;
-        };
-
         bt_clr {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <25 26 27 35 34 33>;
@@ -75,16 +70,6 @@
             key-positions = <5 6>;
         };
 
-        combo-stick-shift1 {
-            bindings = <&sk LEFT_SHIFT>;
-            key-positions = <33 21>;
-        };
-
-        combo-sticky-shift2 {
-            bindings = <&sk LEFT_SHIFT>;
-            key-positions = <27 14>;
-        };
-
         combo-winlock {
             bindings = <&kp LG(L)>;
             key-positions = <7 8 9>;
@@ -98,11 +83,6 @@
         combo-winswap {
             bindings = <&kp LG(LA(TAB))>;
             key-positions = <4 3 2>;
-        };
-
-        combo-Lctrl {
-            bindings = <&kp LEFT_CONTROL>;
-            key-positions = <5 17>;
         };
     };
 
