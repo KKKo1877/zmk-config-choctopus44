@@ -84,6 +84,46 @@
             bindings = <&kp LG(LA(TAB))>;
             key-positions = <4 3 2>;
         };
+
+        combo-Lcontrol {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <28 27>;
+        };
+
+        combo-Rcontrol {
+            bindings = <&kp RIGHT_CONTROL>;
+            key-positions = <32 33>;
+        };
+
+        combo-Lshift {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <27 26>;
+        };
+
+        combo-Rshift {
+            bindings = <&kp RIGHT_SHIFT>;
+            key-positions = <33 34>;
+        };
+
+        combo-Lgui {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <26 25>;
+        };
+
+        combo-Rgui {
+            bindings = <&kp RIGHT_GUI>;
+            key-positions = <34 35>;
+        };
+
+        combo-Lalt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <25 27>;
+        };
+
+        combo-Ralt {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <33 35>;
+        };
     };
 
     behaviors {
