@@ -127,9 +127,8 @@
     };
 
     behaviors {
-// ============================================
-// AUTOSHIFT BEHAVIORS - ADD TO YOUR BEHAVIORS SECTION
-
+        // ============================================
+        // AUTOSHIFT BEHAVIORS - ADD TO YOUR BEHAVIORS SECTION
 
         as: autoshift {
             compatible = "zmk,behavior-hold-tap";
@@ -140,7 +139,8 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-// ============================================
+
+        // ============================================
 
         hold_shift: hold_shift {
             compatible = "zmk,behavior-smart-toggle";
@@ -369,10 +369,10 @@
 
         Default {
             bindings = <
-&kp ESC            &kp Z  &kp L      &kp D  &kp C      &kp V              &kp SINGLE_QUOTE  &kp F      &kp O     &kp U      &kp J      &kp TAB
-&kp LC(BACKSPACE)  &kp N  &kp R      &kp T  &kp S      &kp G              &kp Y             &kp H      &kp A     &kp E      &kp I      &kp LEFT_CONTROL
-&kp DELETE         &kp X  &kp Q      &kp M  &kp W      &kp B  &kp K_MUTE  &kp K             &kp P      &kp SEMI  &kp MINUS  &kp SLASH  &kp LEFT_SHIFT
-                          &kp COMMA  &mo 5  &kp SPACE  &mo 6              &kp BSPC          &kp ENTER  &to 1     &kp DOT
+&kp ESC            &as LS(Z) Z  &as LS(L) L  &kp D        &as LS(C) C  &as LS(V) V              &kp SINGLE_QUOTE  &as LS(F) F  &as LS(O) O     &kp U      &kp J      &kp TAB
+&kp LC(BACKSPACE)  &as LS(N) N  &kp R        &kp T        &kp S        &as LS(G) G              &as LS(Y) Y       &as LS(H) H  &as LS(A) A     &kp E      &kp I      &kp LEFT_CONTROL
+&kp DELETE         &as LS(X) X  &as LS(Q) Q  &as LS(M) M  &as LS(W) W  &as LS(B) B  &kp K_MUTE  &as LS(K) K       &as LS(P) P  &as COLON SEMI  &kp MINUS  &kp SLASH  &kp LEFT_SHIFT
+                                &kp COMMA    &mo 5        &kp SPACE    &mo 6                    &kp BSPC          &kp ENTER    &to 1           &kp DOT
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;
