@@ -60,11 +60,6 @@
             key-positions = <31 32>;
         };
 
-        combo-at {
-            bindings = <&kp AT>;
-            key-positions = <7 19>;
-        };
-
         combo-chinese {
             bindings = <&kp LC(GRAVE)>;
             key-positions = <5 6>;
