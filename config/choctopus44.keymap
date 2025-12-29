@@ -364,10 +364,10 @@
 
         Default {
             bindings = <
-&kp ESC            &as LS(Z) Z  &as LS(L) L          &kp D        &as LS(C) C  &as LS(V) V              &as DOUBLE_QUOTES APOSTROPHE  &as LS(F) F  &as LS(O) O     &as LS(U) U           &as LS(J) J         &kp TAB
-&kp LC(BACKSPACE)  &as LS(N) N  &kp R                &kp T        &kp S        &as LS(G) G              &as LS(Y) Y                   &as LS(H) H  &as LS(A) A     &as LS(E) E           &as LS(I) I         &kp LEFT_CONTROL
-&kp DELETE         &as LS(X) X  &as LS(Q) Q          &as LS(M) M  &as LS(W) W  &as LS(B) B  &kp K_MUTE  &as LS(K) K                   &as LS(P) P  &as COLON SEMI  &as UNDER MINUS       &as QUESTION SLASH  &kp LEFT_SHIFT
-                                &as LESS_THAN COMMA  &mo 5        &kp SPACE    &mo 6                    &kp BSPC                      &kp ENTER    &to 1           &as GREATER_THAN DOT
+&kp ESC            &as LS(Z) Z  &as LS(L) L  &kp D        &as LS(C) C  &as LS(V) V              &as DOUBLE_QUOTES APOSTROPHE  &as LS(F) F  &as LS(O) O     &as LS(U) U      &as LS(J) J         &kp TAB
+&kp LC(BACKSPACE)  &as LS(N) N  &kp R        &kp T        &kp S        &as LS(G) G              &as LS(Y) Y                   &as LS(H) H  &as LS(A) A     &as LS(E) E      &as LS(I) I         &kp LEFT_CONTROL
+&kp DELETE         &as LS(X) X  &as LS(Q) Q  &as LS(M) M  &as LS(W) W  &as LS(B) B  &kp K_MUTE  &as LS(K) K                   &as LS(P) P  &as COLON SEMI  &as UNDER MINUS  &as QUESTION SLASH  &kp LEFT_SHIFT
+                                &kp COMMA    &mo 5        &kp SPACE    &mo 6                    &kp BSPC                      &kp ENTER    &to 1           &kp PERIOD
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;
