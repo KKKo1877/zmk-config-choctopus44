@@ -430,10 +430,10 @@
 
         Mouse-Control {
             bindings = <
-&kp LC(W)      &kp LS(LC(R))                  &kp LS(LC(T))     &kp F12        &kp C_VOLUME_UP  &kp C_MUTE               &msc SCRL_DOWN  &mkp MB1        &kp F5          &mkp MB2           &mkp MB3         &kp LEFT_COMMAND
-&kp RIGHT_ALT  &kp LEFT                       &kp DOWN          &kp UP_ARROW   &kp RIGHT        &kp PAGE_UP              &kp RC(F3)      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP       &mmv MOVE_RIGHT  &kp RIGHT_CONTROL
-&kp LEFT_ALT   &left_taphold RG(GRAVE) GRAVE  &kp RC(RG(Q))     &kp LS(LG(S))  &swapper         &kp PAGE_DOWN  &kp C_PP  &msc SCRL_UP    &kp LC(RIGHT)   &kp RS(RIGHT)   &kp RS(LEFT)       &kp LC(LEFT)     &kp RIGHT_SHIFT
-                                              &kp LEFT_CONTROL  &trans         &trans           &trans                   &trans          &trans          &trans          &kp RIGHT_CONTROL
+&kp LC(W)      &kp LS(LC(R))                  &kp LS(LC(T))     &kp F12        &kp LG(LEFT)  &kp LG(RIGHT)            &msc SCRL_DOWN  &mkp MB1        &kp F5          &mkp MB2           &mkp MB3         &kp LEFT_COMMAND
+&kp RIGHT_ALT  &kp LEFT                       &kp DOWN          &kp UP_ARROW   &kp RIGHT     &kp PAGE_UP              &kp RC(F3)      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP       &mmv MOVE_RIGHT  &kp RIGHT_CONTROL
+&kp LEFT_ALT   &left_taphold RG(GRAVE) GRAVE  &kp RC(RG(Q))     &kp LS(LG(S))  &swapper      &kp PAGE_DOWN  &kp C_PP  &msc SCRL_UP    &kp LC(RIGHT)   &kp RS(RIGHT)   &kp RS(LEFT)       &kp LC(LEFT)     &kp RIGHT_SHIFT
+                                              &kp LEFT_CONTROL  &trans         &trans        &trans                   &trans          &trans          &trans          &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
