@@ -419,10 +419,10 @@
 
         Number-Layer {
             bindings = <
-&kp RIGHT_PARENTHESIS           &kp EXCL                  &kp AT           &kp HASH           &kp DOLLAR           &kp PLUS                    &kp MINUS          &kp PERCENT           &kp CARET           &kp AMPS                &kp ASTRK              &kp LEFT_PARENTHESIS
-&as RIGHT_PARENTHESIS NUMBER_0  &as EXCLAMATION NUMBER_1  &as AT NUMBER_2  &as HASH NUMBER_3  &as DOLLAR NUMBER_4  &kp LEFT_COMMAND            &sk LEFT_SHIFT     &as PERCENT NUMBER_5  &as CARET NUMBER_6  &as AMPERSAND NUMBER_7  &as ASTERISK NUMBER_8  &as LEFT_PARENTHESIS NUMBER_9
-&kp LC(W)                       &kp LC(Z)                 &kp LC(X)        &kp LC(C)          &kp LC(V)            &kp LC(Y)         &kp CAPS  &sk RIGHT_CONTROL  &sk LEFT_SHIFT        &sk LEFT_ALT        &sk LEFT_GUI            &none                  &none
-                                                          &trans           &trans             &kp SPACE            &trans                      &kp BSPC           &kp ENTER             &trans              &trans
+&kp C_FAST_FORWARD              &kp C_RW                  &kp C_VOLUME_DOWN  &kp K_MUTE         &kp C_VOLUME_UP      &kp PLUS                    &kp MINUS          &kp PERCENT           &kp CARET           &kp AMPS                &kp ASTRK              &kp LEFT_PARENTHESIS
+&as RIGHT_PARENTHESIS NUMBER_0  &as EXCLAMATION NUMBER_1  &as AT NUMBER_2    &as HASH NUMBER_3  &as DOLLAR NUMBER_4  &kp C_PLAY_PAUSE            &kp C_NEXT         &as PERCENT NUMBER_5  &as CARET NUMBER_6  &as AMPERSAND NUMBER_7  &as ASTERISK NUMBER_8  &as LEFT_PARENTHESIS NUMBER_9
+&kp LC(W)                       &kp LC(Z)                 &kp LC(X)          &kp LC(C)          &kp LC(V)            &kp LC(Y)         &kp CAPS  &sk RIGHT_CONTROL  &sk LEFT_SHIFT        &sk LEFT_ALT        &sk LEFT_GUI            &none                  &none
+                                                          &trans             &trans             &kp SPACE            &trans                      &kp BSPC           &kp ENTER             &trans              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LS(J) LS(K)>;
