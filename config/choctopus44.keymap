@@ -364,10 +364,10 @@
 
         Default {
             bindings = <
-&kp ESC            &as LS(Z) Z  &as LS(L) L  &kp D        &as LS(C) C  &as LS(V) V              &as DOUBLE_QUOTES APOSTROPHE  &as LS(F) F  &as LS(O) O     &as LS(U) U      &as LS(J) J         &kp TAB
-&kp LC(BACKSPACE)  &as LS(N) N  &kp R        &kp T        &kp S        &as LS(G) G              &as LS(Y) Y                   &as LS(H) H  &as LS(A) A     &as LS(E) E      &as LS(I) I         &kp LEFT_CONTROL
-&kp DELETE         &as LS(X) X  &as LS(Q) Q  &as LS(M) M  &as LS(W) W  &as LS(B) B  &kp K_MUTE  &as LS(K) K                   &as LS(P) P  &as COLON SEMI  &as UNDER MINUS  &as QUESTION SLASH  &kp LEFT_SHIFT
-                                &kp COMMA    &mo 5        &kp SPACE    &mo 6                    &kp BSPC                      &kp ENTER    &to 1           &kp PERIOD
+&kp ESC            &as LS(Z) Z  &as LS(L) L  &kp D          &as LS(C) C  &as LS(V) V              &as DOUBLE_QUOTES APOSTROPHE  &as LS(F) F  &as LS(O) O     &as LS(U) U      &as LS(J) J         &kp TAB
+&kp LC(BACKSPACE)  &as LS(N) N  &kp R        &kp T          &kp S        &as LS(G) G              &as LS(Y) Y                   &as LS(H) H  &as LS(A) A     &as LS(E) E      &as LS(I) I         &kp LEFT_CONTROL
+&kp DELETE         &as LS(X) X  &as LS(Q) Q  &as LS(M) M    &as LS(W) W  &as LS(B) B  &kp K_MUTE  &as LS(K) K                   &as LS(P) P  &as COLON SEMI  &as UNDER MINUS  &as QUESTION SLASH  &kp LEFT_SHIFT
+                                &kp COMMA    &kp BACKSPACE  &kp SPACE    &mo 6                    &mo 5                         &kp ENTER    &to 1           &kp PERIOD
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;
@@ -419,10 +419,10 @@
 
         Number-Layer {
             bindings = <
-&kp C_FAST_FORWARD              &kp C_RW                  &kp C_VOLUME_DOWN  &kp K_MUTE         &kp C_VOLUME_UP      &kp PLUS                    &kp MINUS   &kp PERCENT           &kp CARET           &kp AMPS                &kp ASTRK              &kp LEFT_PARENTHESIS
-&as RIGHT_PARENTHESIS NUMBER_0  &as EXCLAMATION NUMBER_1  &as AT NUMBER_2    &as HASH NUMBER_3  &as DOLLAR NUMBER_4  &kp C_PLAY_PAUSE            &kp C_NEXT  &as PERCENT NUMBER_5  &as CARET NUMBER_6  &as AMPERSAND NUMBER_7  &as ASTERISK NUMBER_8  &as LEFT_PARENTHESIS NUMBER_9
-&kp LC(W)                       &kp LC(Z)                 &kp LC(X)          &kp LC(C)          &kp LC(V)            &kp LC(Y)         &kp CAPS  &kp LC(A)   &kp LC(F)             &sk RIGHT_CONTROL   &sk LEFT_SHIFT          &sk LEFT_ALT           &sk LEFT_GUI
-                                                          &trans             &trans             &kp SPACE            &trans                      &kp BSPC    &kp ENTER             &trans              &trans
+&kp C_FAST_FORWARD              &kp C_RW                  &kp C_VOLUME_DOWN  &kp K_MUTE         &kp C_VOLUME_UP      &kp PLUS                    &kp MINUS  &kp PERCENT           &kp CARET           &kp AMPS                &kp ASTRK              &kp LEFT_PARENTHESIS
+&as RIGHT_PARENTHESIS NUMBER_0  &as EXCLAMATION NUMBER_1  &as AT NUMBER_2    &as HASH NUMBER_3  &as DOLLAR NUMBER_4  &kp C_PLAY_PAUSE            &kp EQUAL  &as PERCENT NUMBER_5  &as CARET NUMBER_6  &as AMPERSAND NUMBER_7  &as ASTERISK NUMBER_8  &as LEFT_PARENTHESIS NUMBER_9
+&kp LC(W)                       &kp LC(Z)                 &kp LC(X)          &kp LC(C)          &kp LC(V)            &kp LC(Y)         &kp CAPS  &kp LC(A)  &kp LC(F)             &sk RIGHT_CONTROL   &sk LEFT_SHIFT          &sk LEFT_ALT           &sk LEFT_GUI
+                                                          &trans             &trans             &kp SPACE            &trans                      &kp BSPC   &kp ENTER             &trans              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LS(J) LS(K)>;
