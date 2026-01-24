@@ -47,7 +47,7 @@
 
         combo-capslock {
             bindings = <&caps_word>;
-            key-positions = <29 31>;
+            key-positions = <29 31 17>;
         };
 
         combo-question {
