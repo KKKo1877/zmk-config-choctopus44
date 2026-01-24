@@ -40,7 +40,7 @@
     combos {
         compatible = "zmk,combos";
 
-        bt_clr {
+        combo-bt_clr {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <25 26 27 35 34 33>;
         };
