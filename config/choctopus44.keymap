@@ -70,7 +70,7 @@
             key-positions = <7 8 9>;
         };
 
-        combo-btclear {
+        combo-bt_clear {
             bindings = <&bt BT_CLR>;
             key-positions = <0 29>;
         };
