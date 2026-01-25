@@ -48,14 +48,14 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(3,0) RC(6,0) RC(6,1) RC(6,2) 
         label = "MIDDLE_ENCODER";
         a-gpios = <&pro_micro 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <40>;  // Changed from 20
+        steps = <15>;  
         status = "enabled";
     };
 
     sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&middle_encoder>;
-        triggers-per-rotation = <20>;  // Keep at 20 (one trigger per click)
+        triggers-per-rotation = <15>;  
     };
 
     vbatt: vbatt {
@@ -63,6 +63,7 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(3,0) RC(6,0) RC(6,1) RC(6,2) 
         label = "VBATT";
     };
 };
+
 
 
 
