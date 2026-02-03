@@ -406,7 +406,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
-        Chinese-Layer {
+        Valmak-Layer {
             bindings = <
 &kp TAB   &kp Q  &kp W   &kp F  &kp P  &kp B          &kp EQUAL      &kp U      &kp O             &kp Y              &kp J     &kp BACKSLASH
 &kp X     &kp N  &kp L   &kp S  &kp T  &kp G          &kp MINUS      &kp E      &kp A             &kp I              &kp H     &kp K
