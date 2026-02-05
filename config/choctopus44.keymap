@@ -414,7 +414,7 @@
                           &mo 5  &to 0  &kp R  &mo 6          &lt 5 BACKSPACE  &kp SPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
-            sensor-bindings = <&inc_dec_kp LEFT_BRACKET RIGHT_BRACKET>;
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         Number-Layer {
