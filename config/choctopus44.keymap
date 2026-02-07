@@ -408,7 +408,7 @@
 
         Valmak-Layer {
             bindings = <
-&kp ESCAPE         &kp Q  &kp W  &kp F  &kp P  &kp B          &kp EQUAL        &kp U      &kp O             &kp Y              &kp J      &kp TAB
+&kp ESC            &kp Q  &kp W  &kp F  &kp P  &kp B          &kp EQUAL        &kp U      &kp O             &kp Y              &kp J      &kp TAB
 &kp X              &kp N  &kp L  &kp S  &kp T  &kp G          &kp MINUS        &kp E      &kp A             &kp I              &kp H      &kp K
 &kp LC(BACKSPACE)  &kp Z  &kp M  &kp C  &kp D  &kp V  &trans  &kp APOS         &kp SEMI   &kp COMMA         &kp DOT            &kp SLASH  &kp ENTER
                           &mo 5  &to 0  &kp R  &mo 6          &lt 5 BACKSPACE  &kp SPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
