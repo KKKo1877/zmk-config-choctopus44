@@ -419,7 +419,7 @@
 
         Number-Layer {
             bindings = <
-&kp F2                          &kp C_RW                  &kp C_VOLUME_DOWN  &kp K_MUTE         &kp C_VOLUME_UP      &kp PLUS                    &kp MINUS  &kp PERCENT           &kp CARET           &kp AMPS                &kp ASTRK              &kp LEFT_PARENTHESIS
+&kp F2                          &kp C_RW                  &kp C_VOLUME_DOWN  &kp K_MUTE         &kp C_VOLUME_UP      &kp PLUS                    &kp LG(D)  &kp LG(E)             &kp LG(L)           &kp C_BRIGHTNESS_INC    &kp C_BRIGHTNESS_DEC   &kp LEFT_PARENTHESIS
 &as RIGHT_PARENTHESIS NUMBER_0  &as EXCLAMATION NUMBER_1  &as AT NUMBER_2    &as HASH NUMBER_3  &as DOLLAR NUMBER_4  &kp C_PLAY_PAUSE            &kp EQUAL  &as PERCENT NUMBER_5  &as CARET NUMBER_6  &as AMPERSAND NUMBER_7  &as ASTERISK NUMBER_8  &as LEFT_PARENTHESIS NUMBER_9
 &kp LC(W)                       &kp LC(Z)                 &kp LC(X)          &kp LC(C)          &kp LC(V)            &kp LC(Y)         &kp CAPS  &kp LC(A)  &kp LC(F)             &sk RIGHT_CONTROL   &sk LEFT_SHIFT          &sk LEFT_ALT           &sk LEFT_GUI
                                                           &trans             &trans             &trans               &trans                      &trans     &trans                &trans              &trans
