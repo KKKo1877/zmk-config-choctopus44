@@ -409,7 +409,7 @@
         GalliumV2-Layer {
             bindings = <
 &kp ESC            &kp Z  &kp L      &kp D  &kp C      &kp V          &kp SINGLE_QUOTE  &kp F      &kp O             &kp U       &kp J      &kp RIGHT_CONTROL
-&kp LC(BACKSPACE)  &kp N  &kp R      &kp S  &kp T      &kp G          &kp Y             &kp H      &kp A             &kp E       &kp I      &kp TAB
+&kp LC(BACKSPACE)  &kp N  &kp R      &kp T  &kp S      &kp G          &kp Y             &kp H      &kp A             &kp E       &kp I      &kp TAB
 &kp BACKSPACE      &kp X  &kp Q      &kp M  &kp W      &kp B  &trans  &kp K             &kp P      &kp SEMI          &kp MINUS   &kp SLASH  &kp LEFT_SHIFT
                           &kp COMMA  &to 0  &kp ENTER  &mo 6          &lt 5 BACKSPACE   &kp SPACE  &kp LEFT_BRACKET  &kp PERIOD
             >;
