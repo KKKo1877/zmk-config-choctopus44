@@ -408,10 +408,10 @@
 
         GalliumV2-Layer {
             bindings = <
-&kp ESC            &kp Z  &kp L  &kp D  &kp C  &kp V          &kp SINGLE_QUOTE  &kp U      &kp O             &kp Y              &kp J      &kp TAB
-&kp LC(BACKSPACE)  &kp N  &kp R  &kp S  &kp T  &kp G          &kp Y             &kp E      &kp A             &kp I              &kp H      &kp K
-&kp BACKSPACE      &kp X  &kp Q  &kp M  &kp W  &kp B  &trans  &kp K             &kp SEMI   &kp COMMA         &kp DOT            &kp SLASH  &kp ENTER
-                          &mo 5  &to 0  &kp R  &mo 6          &lt 5 BACKSPACE   &kp SPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp ESC            &kp Z  &kp L      &kp D  &kp C      &kp V          &kp SINGLE_QUOTE  &kp F      &kp O             &kp U       &kp J      &kp RIGHT_CONTROL
+&kp LC(BACKSPACE)  &kp N  &kp R      &kp S  &kp T      &kp G          &kp Y             &kp H      &kp A             &kp E       &kp I      &kp TAB
+&kp BACKSPACE      &kp X  &kp Q      &kp M  &kp W      &kp B  &trans  &kp K             &kp P      &kp SEMI          &kp MINUS   &kp SLASH  &kp LEFT_SHIFT
+                          &kp COMMA  &to 0  &kp ENTER  &mo 6          &lt 5 BACKSPACE   &kp SPACE  &kp LEFT_BRACKET  &kp PERIOD
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
