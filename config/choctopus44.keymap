@@ -362,7 +362,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Default {
+        Valmak-layer {
             bindings = <
 &kp ESC            &as LS(Q) Q  &as LS(W) W       &as LS(F) F    &as LS(P) P  &as LS(B) B              &as PLUS EQUAL          &as LS(U) U     &as LS(O) O          &as LS(Y) Y              &as LS(J) J         &kp TAB
 &as LS(X) X        &as LS(N) N  &as LS(L) L       &as LS(S) S    &as LS(T) T  &as LS(G) G              &as UNDER MINUS         &as LS(E) E     &as LS(A) A          &as LS(I) I              &as LS(H) H         &as LS(K) K
