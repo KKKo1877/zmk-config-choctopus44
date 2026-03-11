@@ -13,5 +13,5 @@
 #
 ---
 include:
-  - board: nice_nano_v2              #change from: nice_nano
+  - board: nice_nano_v2/nrf52840/zmk              #change from: nice_nano
     shield: choctopus44
