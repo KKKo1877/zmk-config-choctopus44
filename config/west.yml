@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/urob
     - name: caksoylar
       url-base: https://github.com/caksoylar
+    - name: mentaldesk                         #implanting Oskey function
+      url-base: https://github.com/mentaldesk
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -18,6 +20,9 @@ manifest:
       revision: main
     - name: zmk-leader-key
       remote: urob
-      revision: main    
+      revision: main 
+    - name: oskey                             #implanting Oskey function
+      remote: mentaldesk
+      revision: main
   self:
     path: config
