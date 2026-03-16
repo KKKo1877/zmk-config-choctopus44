@@ -20,6 +20,9 @@ manifest:
       revision: main
     - name: zmk-leader-key
       remote: urob
-      revision: main    
+      revision: main
+    - name: oskey
+      remote: mentaldesk
+      revision: main
   self:
     path: config
