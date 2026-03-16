@@ -359,6 +359,11 @@
             flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        os_sel: os_selector {
+            compatible = "zmk,behavior-os-selector";
+            #binding-cells = <1>;
+        };
     };
 
     keymap {
