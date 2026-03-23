@@ -430,9 +430,9 @@
 
         Mouse-Control {
             bindings = <
-&kp LC(W)  &kp LS(LC(R))                  &kp LS(LC(T))     &kp F12        &kp LA(LEFT)  &kp LA(RIGHT)            &msc SCRL_DOWN  &mkp MB1        &kp F5          &mkp MB2           &mkp MB3         &kp LEFT_COMMAND
-&kp HOME   &kp LEFT                       &kp DOWN          &kp UP_ARROW   &kp RIGHT     &kp PAGE_UP              &kp RC(F3)      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP       &mmv MOVE_RIGHT  &kp RIGHT_CONTROL
-&kp END    &left_taphold RG(GRAVE) GRAVE  &kp RC(RG(Q))     &kp LS(LG(S))  &swapper      &kp PAGE_DOWN  &kp C_PP  &msc SCRL_UP    &left_arrow     &right_arr      &none              &none            &kp RIGHT_SHIFT
+&kp LC(W)  &kp LS(LC(R))                  &kp LS(LC(T))     &kp F12        &kp LA(LEFT)  &kp LA(RIGHT)            &msc SCRL_DOWN  &mkp MB1        &kp F5          &mkp MB2                          &mkp MB3                      &kp LEFT_COMMAND
+&kp HOME   &kp LEFT                       &kp DOWN          &kp UP_ARROW   &kp RIGHT     &kp PAGE_UP              &kp RC(F3)      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP                      &mmv MOVE_RIGHT               &left_taphold LA(LEFT_ARROW) LEFT
+&kp END    &left_taphold RG(GRAVE) GRAVE  &kp RC(RG(Q))     &kp LS(LG(S))  &swapper      &kp PAGE_DOWN  &kp C_PP  &msc SCRL_UP    &left_arrow     &right_arr      &ArrowSelect LS(LEFT) LEFT_ARROW  &ArrowSelect LS(RIGHT) RIGHT  &rght_taphold LA(RIGHT) RIGHT
                                           &kp LEFT_CONTROL  &trans         &trans        &trans                   &trans          &trans          &trans          &kp RIGHT_CONTROL
             >;
 
