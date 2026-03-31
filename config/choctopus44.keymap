@@ -82,42 +82,47 @@
 
         combo-Lcontrol {
             bindings = <&kp LEFT_CONTROL>;
-            key-positions = <28 27>;
+            key-positions = <28 16>;
         };
 
         combo-Rcontrol {
             bindings = <&kp RIGHT_CONTROL>;
-            key-positions = <32 33>;
+            key-positions = <32 19>;
         };
 
         combo-Lshift {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <27 26>;
+            key-positions = <27 15>;
         };
 
         combo-Rshift {
             bindings = <&kp RIGHT_SHIFT>;
-            key-positions = <33 34>;
+            key-positions = <33 20>;
         };
 
         combo-Lgui {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <26 25>;
+            key-positions = <26 14>;
         };
 
         combo-Rgui {
             bindings = <&kp RIGHT_GUI>;
-            key-positions = <34 35>;
+            key-positions = <34 21>;
         };
 
         combo-Lalt {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <25 27>;
+            key-positions = <25 13>;
         };
 
         combo-Ralt {
             bindings = <&kp RIGHT_ALT>;
-            key-positions = <33 35>;
+            key-positions = <35 22>;
+        };
+
+        combo-tab {
+            bindings = <&kp TAB>;
+            key-positions = <5 17>;
         };
     };
 
@@ -364,7 +369,7 @@
 
         Valmak-layer {
             bindings = <
-&kp ESC           &as LS(Q) Q  &as LS(W) W       &as LS(F) F        &as LS(P) P  &as LS(B) B              &as PLUS EQUAL          &as LS(U) U     &as LS(O) O          &as LS(Y) Y              &as LS(J) J         &kp TAB
+&kp ESC           &as LS(Q) Q  &as LS(W) W       &as LS(F) F        &as LS(P) P  &as LS(B) B              &as PLUS EQUAL          &as LS(U) U     &as LS(O) O          &as LS(Y) Y              &as LS(J) J         &kp RCTRL
 &as LS(X) X       &as LS(N) N  &as LS(L) L       &as LS(S) S        &as LS(T) T  &as LS(G) G              &as UNDER MINUS         &as LS(E) E     &as LS(A) A          &as LS(I) I              &as LS(H) H         &as LS(K) K
 &kp LEFT_CONTROL  &as LS(Z) Z  &as LS(M) M       &as LS(C) C        &as LS(D) D  &as LS(V) V  &kp K_MUTE  &as DOUBLE_QUOTES APOS  &as COLON SEMI  &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH  &kp ENTER
                                &kp LEFT_BRACKET  &kp LC(BACKSPACE)  &as LS(R) R  &mo 6                    &lt 5 BACKSPACE         &kp SPACE       &to 1                &kp RIGHT_BRACKET
