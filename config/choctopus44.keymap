@@ -441,7 +441,28 @@
                                           &kp LEFT_CONTROL  &trans         &trans        &trans                   &trans          &trans          &trans          &kp RIGHT_CONTROL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>; 
+        };
+
+        extra1 {
+            status = "reserved";
+        };
+
+        extra2 {
+            status = "reserved";
+        };
+
+         extra3 {
+            status = "reserved";
+        }; 
+
+         extra4 {
+            status = "reserved";
+        }; 
+
+         extra5 {
+            status = "reserved";
+
         };
     };
 };
