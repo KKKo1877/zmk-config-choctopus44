@@ -19,47 +19,7 @@
         transform = <&default_transform>;
         kscan = <&kscan0>;
 
-        keys  //                     w    h    x    y   rot  rx   ry
-            = <&key_physical_attrs 100  100    0  150     0   0    0>  /*  0 Q  */
-            , <&key_physical_attrs 100  100  100  100     0   0    0>  /*  1 W  */
-            , <&key_physical_attrs 100  100  200   50     0   0    0>  /*  2 E  */
-            , <&key_physical_attrs 100  100  300    0     0   0    0>  /*  3 R  */
-            , <&key_physical_attrs 100  100  400   25     0   0    0>  /*  4 T  */
-            , <&key_physical_attrs 100  100  550   25     0   0    0>  /*  5 Y  */
-            , <&key_physical_attrs 100  100  650    0     0   0    0>  /*  6 U  */
-            , <&key_physical_attrs 100  100  750   50     0   0    0>  /*  7 I  */
-            , <&key_physical_attrs 100  100  850  100     0   0    0>  /*  8 O  */
-            , <&key_physical_attrs 100  100  950  150     0   0    0>  /*  9 P  */
-            , <&key_physical_attrs 100  100    0  250     0   0    0>  /* 10 A  */
-            , <&key_physical_attrs 100  100  100  200     0   0    0>  /* 11 S  */
-            , <&key_physical_attrs 100  100  200  150     0   0    0>  /* 12 D  */
-            , <&key_physical_attrs 100  100  300  100     0   0    0>  /* 13 F  */
-            , <&key_physical_attrs 100  100  400  125     0   0    0>  /* 14 G  */
-            , <&key_physical_attrs 100  100  550  125     0   0    0>  /* 15 H  */
-            , <&key_physical_attrs 100  100  650  100     0   0    0>  /* 16 J  */
-            , <&key_physical_attrs 100  100  750  150     0   0    0>  /* 17 K  */
-            , <&key_physical_attrs 100  100  850  200     0   0    0>  /* 18 L  */
-            , <&key_physical_attrs 100  100  950  250     0   0    0>  /* 19 ;  */
-            , <&key_physical_attrs 100  100    0  350     0   0    0>  /* 20 LSHFT */
-            , <&key_physical_attrs 100  100  100  300     0   0    0>  /* 21 Z  */
-            , <&key_physical_attrs 100  100  200  250     0   0    0>  /* 22 X  */
-            , <&key_physical_attrs 100  100  300  200     0   0    0>  /* 23 C  */
-            , <&key_physical_attrs 100  100  400  225     0   0    0>  /* 24 V  */
-            , <&key_physical_attrs 100  100  475  350     0   0    0>  /* 25 mid-encoder (RC(3,0)) */
-            , <&key_physical_attrs 100  100  550  225     0   0    0>  /* 26 B  */
-            , <&key_physical_attrs 100  100  650  200     0   0    0>  /* 27 N  */
-            , <&key_physical_attrs 100  100  750  250     0   0    0>  /* 28 M  */
-            , <&key_physical_attrs 100  100  850  300     0   0    0>  /* 29 ,  */
-            , <&key_physical_attrs 100  100  950  350     0   0    0>  /* 30 RSHFT */
-            , <&key_physical_attrs 100  100  200  350     0   0    0>  /* 31 RC(3,2) */
-            , <&key_physical_attrs 100  100  300  300     0   0    0>  /* 32 RC(3,3) */
-            , <&key_physical_attrs 100  100  400  325     0   0    0>  /* 33 RC(3,4) */
-            , <&key_physical_attrs 100  100  500  375     0   0    0>  /* 34 RC(3,5) thumb */
-            , <&key_physical_attrs 100  100  550  375     0   0    0>  /* 35 RC(7,0) thumb */
-            , <&key_physical_attrs 100  100  650  325     0   0    0>  /* 36 RC(7,1) */
-            , <&key_physical_attrs 100  100  750  300     0   0    0>  /* 37 RC(7,2) */
-            , <&key_physical_attrs 100  100  850  325     0   0    0>  /* 38 RC(7,3) */
-            ;
+
     };
 
     default_transform: keymap_transform_0 {
