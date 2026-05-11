@@ -15,3 +15,5 @@
 include:
   - board: nice_nano//zmk
     shield: choctopus44
+# attemp adding zmk studio support
+    snippet: studio-rpc-usb-uart
