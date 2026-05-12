@@ -17,3 +17,6 @@ include:
     shield: choctopus44
 # attemp adding zmk studio support
     snippet: studio-rpc-usb-uart
+# attemp adding keypeek
+    shield: <existing shields> raw_hid_adapter # <-- required for Raw HID support
+    snippet: studio-rpc-usb-uart # <-- required for ZMK Studio support
