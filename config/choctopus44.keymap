@@ -126,6 +126,19 @@
         };
     };
 
+    macros {
+        // ============================================
+        // MACRO: Ctrl+Backspace for layer-tap thumb key
+        ctrl_bspc: ctrl_bspc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL>,
+                       <&macro_tap &kp BSPC>,
+                       <&macro_release &kp LCTRL>;
+        };
+        // ============================================
+    };
+
     behaviors {
         // ============================================
         // AUTOSHIFT BEHAVIORS - ADD TO YOUR BEHAVIORS SECTION
@@ -140,6 +153,20 @@
             bindings = <&kp>, <&kp>;
         };
 
+        // ============================================
+
+        // ============================================
+        // HOLD-TAP: hold = mo 6, tap = ctrl+backspace macro
+        lt6_cbspc: lt6_cbspc {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT6_CTRLBSPC";
+            #binding-cells = <2>;
+            tapping-term-ms = <500>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <200>;
+            retro-tap;
+            bindings = <&mo>, <&ctrl_bspc>;
+        };
         // ============================================
 
         hold_shift: hold_shift {
@@ -369,10 +396,10 @@
 
         Valmak-layer {
             bindings = <
-&kp ESC         &as LS(Q) Q  &as LS(W) W       &as LS(F) F  &as LS(P) P  &as LS(B) B              &as PLUS EQUAL          &as LS(U) U     &as LS(O) O          &as LS(Y) Y              &as LS(J) J         &kp LEFT_SHIFT
-&as LS(X) X     &as LS(N) N  &as LS(L) L       &as LS(S) S  &as LS(T) T  &as LS(G) G              &as UNDER MINUS         &as LS(E) E     &as LS(A) A          &as LS(I) I              &as LS(H) H         &as LS(K) K
-&studio_unlock  &as LS(Z) Z  &as LS(M) M       &as LS(C) C  &as LS(D) D  &as LS(V) V  &kp K_MUTE  &as DOUBLE_QUOTES APOS  &as COLON SEMI  &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH  &kp ENTER
-                             &kp LEFT_BRACKET  &kp ENTER    &as LS(R) R  &kp A                    &lt 5 BACKSPACE         &kp SPACE       &to 1                &kp RIGHT_BRACKET
+&kp ESC         &as LS(Q) Q  &as LS(W) W       &as LS(F) F  &as LS(P) P  &as LS(B) B                        &as PLUS EQUAL          &as LS(U) U     &as LS(O) O          &as LS(Y) Y              &as LS(J) J         &kp LEFT_SHIFT
+&as LS(X) X     &as LS(N) N  &as LS(L) L       &as LS(S) S  &as LS(T) T  &as LS(G) G                        &as UNDER MINUS         &as LS(E) E     &as LS(A) A          &as LS(I) I              &as LS(H) H         &as LS(K) K
+&studio_unlock  &as LS(Z) Z  &as LS(M) M       &as LS(C) C  &as LS(D) D  &as LS(V) V            &kp K_MUTE  &as DOUBLE_QUOTES APOS  &as COLON SEMI  &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH  &kp ENTER
+                             &kp LEFT_BRACKET  &kp ENTER    &as LS(R) R  &lt6_cbspc 6 0                     &lt 5 BACKSPACE         &kp SPACE       &to 1                &kp RIGHT_BRACKET
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;
