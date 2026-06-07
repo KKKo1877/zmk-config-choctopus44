@@ -371,10 +371,10 @@
 
         Valmak-layer {
             bindings = <
-&kp ESC         &as LS(Q) Q  &as LS(W) W       &as LS(F) F        &as LS(P) P  &as LS(B) B              &as PLUS EQUAL          &as LS(U) U     &as LS(O) O          &as LS(Y) Y              &as LS(J) J         &kp LEFT_SHIFT
-&as LS(X) X     &as LS(N) N  &as LS(L) L       &as LS(S) S        &as LS(T) T  &as LS(G) G              &as UNDER MINUS         &as LS(E) E     &as LS(A) A          &as LS(I) I              &as LS(H) H         &as LS(K) K
-&studio_unlock  &as LS(Z) Z  &as LS(M) M       &as LS(C) C        &as LS(D) D  &as LS(V) V  &kp K_MUTE  &as DOUBLE_QUOTES APOS  &as COLON SEMI  &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH  &left_taphold LS(ENTER) ENTER
-                             &kp LEFT_BRACKET  &kp LC(BACKSPACE)  &as LS(R) R  &lt 6 LC(BACKSPACE)      &lt 5 BACKSPACE         &kp SPACE       &to 1                &kp RIGHT_BRACKET
+&kp ESC         &as LS(Q) Q  &as LS(W) W       &as LS(F) F        &as LS(P) P  &as LS(B) B                      &as PLUS EQUAL          &as LS(U) U     &as LS(O) O          &as LS(Y) Y              &as LS(J) J         &kp LEFT_SHIFT
+&as LS(X) X     &as LS(N) N  &as LS(L) L       &as LS(S) S        &as LS(T) T  &as LS(G) G                      &as UNDER MINUS         &as LS(E) E     &as LS(A) A          &as LS(I) I              &as LS(H) H         &as LS(K) K
+&studio_unlock  &as LS(Z) Z  &as LS(M) M       &as LS(C) C        &as LS(D) D  &as LS(V) V          &kp K_MUTE  &as DOUBLE_QUOTES APOS  &as COLON SEMI  &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH  &left_taphold LS(ENTER) ENTER
+                             &kp LEFT_BRACKET  &kp LC(BACKSPACE)  &as LS(R) R  &lt 6 LC(BACKSPACE)              &lt 5 BACKSPACE         &kp SPACE       &to 1                &tog 1
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;
@@ -384,8 +384,8 @@
             bindings = <
 &none  &kp ESC           &kp Q   &kp W  &kp E   &kp R                     &none   &none     &kp UP_ARROW  &none      &kp TAB  &none
 &none  &kp LEFT_CONTROL  &kp A   &kp S  &kp D   &kp F                     &none   &kp LEFT  &kp DOWN      &kp RIGHT  &none    &none
-&none  &kp LEFT_SHIFT    &none   &none  &none   &kp P   &kp C_PLAY_PAUSE  &none   &none     &none         &none      &to 3    &tog 1
-                         &trans  &to 0  &trans  &trans                    &trans  &trans    &to 2         &trans
+&none  &kp LEFT_SHIFT    &none   &none  &none   &kp P   &kp C_PLAY_PAUSE  &none   &none     &none         &none      &to 3    &none
+                         &trans  &to 0  &trans  &trans                    &trans  &trans    &to 2         &tog 1
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
@@ -415,10 +415,10 @@
 
         GalliumV2-Layer {
             bindings = <
-&kp ESC            &kp Z  &kp L      &kp D  &kp C      &kp V          &kp SINGLE_QUOTE  &kp F      &kp O             &kp U       &kp J      &kp RIGHT_CONTROL
-&kp LC(BACKSPACE)  &kp N  &kp R      &kp T  &kp S      &kp G          &kp Y             &kp H      &kp A             &kp E       &kp I      &kp TAB
-&kp BACKSPACE      &kp X  &kp Q      &kp M  &kp W      &kp B  &trans  &kp K             &kp P      &kp SEMI          &kp MINUS   &kp SLASH  &kp LEFT_SHIFT
-                          &kp COMMA  &to 0  &kp ENTER  &trans         &lt 5 BACKSPACE   &kp SPACE  &kp LEFT_BRACKET  &kp PERIOD
+&kp ESC            &kp Z  &kp L      &kp D  &kp C      &kp V           &kp SINGLE_QUOTE  &kp F      &kp O             &kp U       &kp J      &kp RIGHT_CONTROL
+&kp LC(BACKSPACE)  &kp N  &kp R      &kp T  &kp S      &kp G           &kp Y             &kp H      &kp A             &kp E       &kp I      &kp TAB
+&kp BACKSPACE      &kp X  &kp Q      &kp M  &kp W      &kp B   &trans  &kp K             &kp P      &kp SEMI          &kp MINUS   &kp SLASH  &kp LEFT_SHIFT
+                          &kp COMMA  &to 0  &kp ENTER  &trans          &lt 5 BACKSPACE   &kp SPACE  &kp LEFT_BRACKET  &kp PERIOD
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
