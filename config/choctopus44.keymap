@@ -383,10 +383,10 @@
 
         Gaming-layer {
             bindings = <
-&none  &kp ESC           &kp Q   &kp W  &kp E   &kp R                     &none   &none     &kp UP_ARROW  &none      &kp TAB  &none
-&none  &kp LEFT_CONTROL  &kp A   &kp S  &kp D   &kp F                     &none   &kp LEFT  &kp DOWN      &kp RIGHT  &none    &none
-&none  &kp LEFT_SHIFT    &none   &none  &none   &kp P   &kp C_PLAY_PAUSE  &none   &none     &none         &none      &to 3    &none
-                         &trans  &to 0  &trans  &trans                    &trans  &trans    &to 2         &tog 1
+&none  &kp ESC           &kp Q   &kp W   &kp E   &kp R                     &none   &none     &kp UP_ARROW  &none      &kp TAB  &none
+&none  &kp LEFT_CONTROL  &kp A   &kp S   &kp D   &kp F                     &none   &kp LEFT  &kp DOWN      &kp RIGHT  &none    &none
+&none  &kp LEFT_SHIFT    &none   &none   &none   &kp P   &kp C_PLAY_PAUSE  &none   &none     &none         &none      &to 3    &none
+                         &trans  &trans  &trans  &trans                    &trans  &trans    &to 2         &tog 1
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
