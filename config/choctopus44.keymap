@@ -255,12 +255,6 @@
             };
 
             // ── Vowel alternations ────────────────────────────────
-            // A → O
-            ao {
-                trigger-keys = <A>;
-                bindings = <&kp O>;
-            };
-
             // E → U
             eu {
                 trigger-keys = <E>;
