@@ -216,7 +216,6 @@
         //   P → L  
         //   W → N
         //   N → L  (NL same finger, ring)
-        //   R → L  (classic Magic Sturdy — index→middle)
         //   S → C  (middle finger SC bigram)
         //   C/D/G → Y  (index-column → Y on right hand)
         //   A → O  (vowel alternation)
@@ -243,12 +242,6 @@
                 bindings = <&kp N>;
             };
             // ── SFB eliminations ──────────────────────────────────
-            // R → L  (classic Magic Sturdy SFB fix)
-            rl {
-                trigger-keys = <R>;
-                bindings = <&kp L>;
-            };
-
             // S → C  (SC same-finger bigram on Valmak middle)
             sc {
                 trigger-keys = <S>;
