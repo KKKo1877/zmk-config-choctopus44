@@ -18,13 +18,20 @@
 #define BT3 BT_SEL 3
 #define BT4 BT_SEL 4
 
-// &out OUT_BLE
-// #define MO_TOG(layer) &mo_tog layer layer   // Macro to apply momentary-layer-on-hold/toggle-layer-on-tap to a specific layer
+// ============================================================
+// MAGIC KEY — requires zmk-adaptive-key module by urob
+// Add to west.yml:
+//   remotes:
+//     - name: urob
+//       url-base: https://github.com/urob
+//   projects:
+//     - name: zmk-adaptive-key
+//       remote: urob
+//       revision: v0.3   ← match your ZMK version
+// ============================================================
 
 &mt {
     tapping-term-ms = <500>;
-
-    // retro-tap;
 };
 
 &lt { tapping-term-ms = <180>; };
@@ -129,21 +136,177 @@
         };
     };
 
-    behaviors {
-        // ============================================
-        // AUTOSHIFT BEHAVIORS - ADD TO YOUR BEHAVIORS SECTION
+    // ============================================================
+    // MAGIC KEY MACROS
+    // Each macro outputs the "alternate" character for a bigram.
+    // e.g. after typing N, pressing magic → L  (avoids NL SFB)
+    // ============================================================
+    macros {
+        // Trigram briefs (space/enter → THE)
+        magic_the: magic_the {
+            compatible = "zmk,behavior-macro";
+            label = "MAGIC_THE";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp H &kp E>;
+        };
 
+        // I → ON  (covers ION trigram)
+        magic_on: magic_on {
+            compatible = "zmk,behavior-macro";
+            label = "MAGIC_ON";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp N>;
+        };
+
+        // T → MENT
+        magic_ment: magic_ment {
+            compatible = "zmk,behavior-macro";
+            label = "MAGIC_MENT";
+            #binding-cells = <0>;
+            bindings = <&kp M &kp E &kp N &kp T>;
+        };
+
+        // A → ND  (for AND via repeat-key style; also useful standalone)
+        magic_nd: magic_nd {
+            compatible = "zmk,behavior-macro";
+            label = "MAGIC_ND";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp D>;
+        };
+
+        // I → NG  (for ING)
+        magic_ng: magic_ng {
+            compatible = "zmk,behavior-macro";
+            label = "MAGIC_NG";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp G>;
+        };
+
+        // Y → OU  (for YOU)
+        magic_ou: magic_ou {
+            compatible = "zmk,behavior-macro";
+            label = "MAGIC_OU";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp U>;
+        };
+
+        // FOR brief (space/enter alternate — second binding priority)
+        magic_for: magic_for {
+            compatible = "zmk,behavior-macro";
+            label = "MAGIC_FOR";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp O &kp R>;
+        };
+    };
+
+    behaviors {
+        // ============================================================
+        // MAGIC KEY BEHAVIOR
+        // Placed on the Z key position (bottom-left, left hand).
+        // Outputs a context-sensitive alternate character based on
+        // the last key typed, targeting Valmak's SFBs.
+        //
+        // Valmak left hand columns (index→pinky):
+        //   index:  R / T / G / D / V
+        //   middle: S / L / C / M
+        //   ring:   F / N / W
+        //   pinky:  P / X / Z (magic replaces Z)
+        //
+        // Key SFB targets in Valmak:
+        //   N → L  (NL same finger, ring)
+        //   R → L  (classic Magic Sturdy — index→middle)
+        //   S → C  (middle finger SC bigram)
+        //   C/D/G → Y  (index-column → Y on right hand)
+        //   A → O  (vowel alternation)
+        //   E → U  (vowel alternation)
+        //   I → ON (ION trigram)
+        //   T → MENT (suffix brief)
+        //   Y → OU  (YOU trigram)
+        //   SPACE/RET → THE (trigram brief)
+        // ============================================================
+        magic: magic_key {
+            compatible = "zmk,behavior-adaptive-key";
+            label = "MAGIC_KEY";
+            #binding-cells = <0>;
+            // Default fallback: outputs nothing (you can change to &kp Z if you want Z back)
+            bindings = <&none>;
+
+            // ── SFB eliminations ──────────────────────────────────
+            // N → L  (avoids NL roll on ring finger)
+            nl {
+                trigger-keys = <N>;
+                bindings = <&kp L>;
+            };
+
+            // R → L  (classic Magic Sturdy SFB fix)
+            rl {
+                trigger-keys = <R>;
+                bindings = <&kp L>;
+            };
+
+            // S → C  (SC same-finger bigram on Valmak middle)
+            sc {
+                trigger-keys = <S>;
+                bindings = <&kp C>;
+            };
+
+            // C/D/G → Y  (left-index column → Y, avoids index SFBs)
+            cdy {
+                trigger-keys = <C D G>;
+                bindings = <&kp Y>;
+            };
+
+            // ── Vowel alternations ────────────────────────────────
+            // A → O
+            ao {
+                trigger-keys = <A>;
+                bindings = <&kp O>;
+            };
+
+            // E → U
+            eu {
+                trigger-keys = <E>;
+                bindings = <&kp U>;
+            };
+
+            // ── Trigram / suffix briefs ───────────────────────────
+            // I → ON  (covers ION)
+            ion {
+                trigger-keys = <I>;
+                bindings = <&magic_on>;
+            };
+
+            // T → MENT
+            tment {
+                trigger-keys = <T>;
+                bindings = <&magic_ment>;
+            };
+
+            // Y → OU  (covers YOU)
+            you {
+                trigger-keys = <Y>;
+                bindings = <&magic_ou>;
+            };
+
+            // SPACE or ENTER → THE
+            the {
+                trigger-keys = <SPACE RET>;
+                bindings = <&magic_the>;
+            };
+        };
+
+        // ============================================================
+        // AUTOSHIFT BEHAVIORS
+        // ============================================================
         as: autoshift {
             compatible = "zmk,behavior-hold-tap";
             label = "AUTOSHIFT";
             #binding-cells = <2>;
-            tapping-term-ms = <220>;  // Adjust timing: 135-200ms typical
+            tapping-term-ms = <220>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-
-        // ============================================
 
         hold_shift: hold_shift {
             compatible = "zmk,behavior-smart-toggle";
@@ -180,7 +343,6 @@
             label = "BACKSPACE_DELETE";
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
-
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -192,7 +354,6 @@
             flavor = "tap-preferred";
             require-prior-idle-ms = <125>;
             bindings = <&mo>, <&kp>;
-
             quick-tap-ms = <125>;
         };
 
@@ -200,7 +361,6 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HT_SHIFT";
             bindings = <&kp>, <&kp>;
-
             #binding-cells = <2>;
             tapping-term-ms = <130>;
             flavor = "tap-preferred";
@@ -210,7 +370,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "BSP_WORD";
             bindings = <&kp LA(BACKSPACE)>, <&kp LA(DELETE)>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -220,7 +379,6 @@
             label = "TD_SEMIC";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp SEMI>;
-
             tapping-term-ms = <250>;
         };
 
@@ -229,7 +387,6 @@
             label = "TD_SHIFTCW";
             #binding-cells = <0>;
             bindings = <&sk RIGHT_SHIFT>, <&caps_word>;
-
             tapping-term-ms = <300>;
         };
 
@@ -238,7 +395,6 @@
             label = "LEFT_ARROW";
             #binding-cells = <0>;
             bindings = <&kp LEFT>, <&kp LG(LEFT_ARROW)>;
-
             tapping-term-ms = <225>;
         };
 
@@ -247,7 +403,6 @@
             label = "RIGHT_ARR";
             #binding-cells = <0>;
             bindings = <&kp RIGHT>, <&kp LG(RIGHT)>;
-
             tapping-term-ms = <225>;
         };
 
@@ -255,7 +410,6 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LEFT_TAPHOLD";
             bindings = <&kp>, <&kp>;
-
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             flavor = "tap-preferred";
@@ -265,7 +419,6 @@
             compatible = "zmk,behavior-hold-tap";
             label = "RGHT_TAPHOLD";
             bindings = <&kp>, <&kp>;
-
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             flavor = "tap-preferred";
@@ -286,7 +439,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_SLASH";
             bindings = <&kp KP_SLASH>, <&kp BACKSLASH>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -295,7 +447,6 @@
             compatible = "zmk,behavior-hold-tap";
             label = "PHT_L2SHIFT";
             bindings = <&kp>, <&kp>;
-
             #binding-cells = <2>;
             tapping-term-ms = <120>;
             flavor = "tap-preferred";
@@ -306,7 +457,6 @@
             compatible = "zmk,behavior-hold-tap";
             label = "ARROWSELECT";
             bindings = <&kp>, <&kp>;
-
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             flavor = "tap-preferred";
@@ -316,7 +466,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_QMARKCOLON";
             bindings = <&kp QUESTION>, <&kp COLON>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -325,7 +474,6 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HT_CAPSWORD";
             bindings = <&kp>, <&caps_word>;
-
             #binding-cells = <2>;
             tapping-term-ms = <150>;
         };
@@ -334,7 +482,6 @@
             compatible = "zmk,behavior-smart-toggle";
             #binding-cells = <0>;
             bindings = <&kp RGUI>, <&kp TAB>;
-
             label = "SWAPPER";
         };
 
@@ -342,7 +489,6 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HT_SWAPPER";
             bindings = <&mo>, <&swapper>;
-
             #binding-cells = <2>;
             tapping-term-ms = <150>;
         };
@@ -372,10 +518,15 @@
 
         Valmak-layer {
             bindings = <
-&kp ESC         &as LS(Q) Q  &as LS(W) W       &as LS(F) F        &as LS(P) P  &as LS(B) B                      &as PLUS EQUAL          &as LS(U) U     &as LS(O) O          &as LS(Y) Y              &as LS(J) J         &kp LEFT_SHIFT
-&as LS(X) X     &as LS(N) N  &as LS(L) L       &as LS(S) S        &as LS(T) T  &as LS(G) G                      &as UNDER MINUS         &as LS(E) E     &as LS(A) A          &as LS(I) I              &as LS(H) H         &as LS(K) K
-&studio_unlock  &as LS(Z) Z  &as LS(M) M       &as LS(C) C        &as LS(D) D  &as LS(V) V          &kp K_MUTE  &as DOUBLE_QUOTES APOS  &as COLON SEMI  &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH  &left_taphold LS(ENTER) ENTER
-                             &kp LEFT_BRACKET  &kp LC(BACKSPACE)  &as LS(R) R  &lt 6 LC(BACKSPACE)              &lt 5 BACKSPACE         &kp SPACE       &to 1                &tog 1
+// ┌──────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────┐                              ┌──────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────┐
+   &kp ESC         &as LS(Q) Q   &as LS(W) W    &as LS(F) F    &as LS(P) P    &as LS(B) B                                   &as PLUS EQUAL  &as LS(U) U    &as LS(O) O    &as LS(Y) Y    &as LS(J) J    &kp LEFT_SHIFT
+// ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤                              ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+   &as LS(X) X     &as LS(N) N   &as LS(L) L    &as LS(S) S    &as LS(T) T    &as LS(G) G                                   &as UNDER MINUS &as LS(E) E    &as LS(A) A    &as LS(I) I    &as LS(H) H    &as LS(K) K
+// ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────┐  ┌───────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+   &studio_unlock  &magic         &as LS(M) M    &as LS(C) C    &as LS(D) D    &as LS(V) V    &kp K_MUTE        &as DOUBLE_QUOTES APOS  &as COLON SEMI  &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH  &left_taphold LS(ENTER) ENTER
+// └──────────────┴──────────────┴──────────────┼──────────────┼──────────────┼──────────────┼──────────────┘  └───────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────┴──────────────┘
+                                 &kp LEFT_BRACKET  &kp LC(BACKSPACE)  &as LS(R) R  &lt 6 LC(BACKSPACE)              &lt 5 BACKSPACE  &kp SPACE  &to 1  &tog 1
+//                               └──────────────┴──────────────┴──────────────┴──────────────┘                 └───────────┴──────────────┴──────────────┴──────────────┘
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;
