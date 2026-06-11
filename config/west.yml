@@ -34,5 +34,8 @@ manifest:
     - name: zmk-keypeek-layer-notifier # <-- KeyPeek module
       remote: srwi
       revision: master
+    - name: zmk-adaptive-key
+      remote: urob
+      revision: main   # must match your ZMK revision
   self:
     path: config
