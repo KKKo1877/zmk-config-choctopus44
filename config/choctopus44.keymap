@@ -183,7 +183,7 @@
         };
 
         // N → YU  (for NYU)
-        magic_ou: magic_yu {
+        magic_yu: magic_yu {
             compatible = "zmk,behavior-macro";
             label = "MAGIC_YU";
             #binding-cells = <0>;
