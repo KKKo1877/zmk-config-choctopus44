@@ -247,8 +247,8 @@
                 bindings = <&kp C>;
             };
 
-            // C/D/G → Y  (left-index column → Y, avoids index SFBs)
-            cdy {
+            // C/F → L  (left-index column → Y, avoids index SFBs)
+            cf {
                 trigger-keys = <C F>;
                 bindings = <&kp L>;
             };
