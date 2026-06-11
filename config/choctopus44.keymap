@@ -182,12 +182,12 @@
             bindings = <&kp N &kp G>;
         };
 
-        // Y → OU  (for YOU)
-        magic_ou: magic_ou {
+        // N → YU  (for NYU)
+        magic_ou: magic_yu {
             compatible = "zmk,behavior-macro";
-            label = "MAGIC_OU";
+            label = "MAGIC_YU";
             #binding-cells = <0>;
-            bindings = <&kp O &kp U>;
+            bindings = <&kp Y &kp U>;
         };
 
         // FOR brief (space/enter alternate — second binding priority)
@@ -215,7 +215,6 @@
         // Key SFB targets in Valmak:
         //   P → L  
         //   W → N
-        //   N → L  (NL same finger, ring)
         //   S → C  (middle finger SC bigram)
         //   C/D/G → Y  (index-column → Y on right hand)
         //   A → O  (vowel alternation)
@@ -268,16 +267,22 @@
                 bindings = <&magic_on>;
             };
 
+            // A → ND
+            and {
+                trigger-keys = <A>;
+                bindings = <&magic_nd>;
+            };
+
             // T → MENT
             tment {
                 trigger-keys = <T>;
                 bindings = <&magic_ment>;
             };
 
-            // Y → OU  (covers YOU)
-            you {
-                trigger-keys = <Y>;
-                bindings = <&magic_ou>;
+            // N → YU  (covers NYU)
+            nyu {
+                trigger-keys = <N>;
+                bindings = <&magic_yu>;
             };
 
             // SPACE or ENTER → THE
