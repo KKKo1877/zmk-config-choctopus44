@@ -158,13 +158,6 @@
             bindings = <&kp O &kp N>;
         };
 
-        // T → MENT
-        magic_ment: magic_ment {
-            compatible = "zmk,behavior-macro";
-            label = "MAGIC_MENT";
-            #binding-cells = <0>;
-            bindings = <&kp M &kp E &kp N &kp T>;
-        };
 
         // A → ND  (for AND via repeat-key style; also useful standalone)
         magic_nd: magic_nd {
@@ -232,6 +225,10 @@
             #binding-cells = <0>;
 
             bindings = <&none>;
+            th {
+                trigger-keys = <T>;
+                bindings = <&kp H>;
+            };
 
             pl {
                 trigger-keys = <P>;
@@ -243,10 +240,10 @@
                 bindings = <&kp N>;
             };
             // ── SFB eliminations ──────────────────────────────────
-            // N → L  (avoids NL roll on ring finger)
-            nl {
+            // N → T  (NT Bigram)
+            nt {
                 trigger-keys = <N>;
-                bindings = <&kp L>;
+                bindings = <&kp T>;
             };
 
             // R → L  (classic Magic Sturdy SFB fix)
