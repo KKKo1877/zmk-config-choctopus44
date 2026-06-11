@@ -216,7 +216,7 @@
         //   P → L  
         //   W → N
         //   S → C  (middle finger SC bigram)
-        //   C/D/G → Y  (index-column → Y on right hand)
+        //   C/S/F → L  
         //   A → O  (vowel alternation)
         //   E → U  (vowel alternation)
         //   I → ON (ION trigram)
@@ -249,8 +249,8 @@
 
             // C/D/G → Y  (left-index column → Y, avoids index SFBs)
             cdy {
-                trigger-keys = <C D G>;
-                bindings = <&kp Y>;
+                trigger-keys = <C F S>;
+                bindings = <&kp L>;
             };
 
             // ── Vowel alternations ────────────────────────────────
