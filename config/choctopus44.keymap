@@ -284,13 +284,13 @@
             };
 
             // L → 10364@nyu.edu
-            l10364@nyu.edu {
+            lworkemail {
                 trigger-keys = <L>;
                 bindings = <&magic_10>;
             };
 
             // H → uonan2015@gmail.com
-            huonan2015@gmail.com {
+            hpersonalemail {
                 trigger-keys = <H>;
                 bindings = <&magic_uo>;
             };
