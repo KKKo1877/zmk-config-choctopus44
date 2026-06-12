@@ -147,7 +147,7 @@
             compatible = "zmk,behavior-macro";
             label = "MAGIC_10";
             #binding-cells = <0>;
-            bindings = <&kp 1 &kp 0 &kp 3 &kp 6 &kp 4 &kp AT &kp N &kp Y &kp U &kp DOT &kp E &kp D &kp U>
+            bindings = <&kp 1 &kp 0 &kp 3 &kp 6 &kp 4 &kp AT &kp N &kp Y &kp U &kp DOT &kp E &kp D &kp U>;
         };
 
         //personal email (h → uonan2015@gmail.com)
@@ -155,7 +155,7 @@
             compatible = "zmk,behavior-macro";
             label = "MAGIC_UO";
             #binding-cells = <0>;
-            bindings = <&kp U &kp O &kp N &kp A &kp N &kp 2 &kp 0 &kp 1 &kp 5 &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>
+            bindings = <&kp U &kp O &kp N &kp A &kp N &kp 2 &kp 0 &kp 1 &kp 5 &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
         };
 
         // Trigram briefs (space/enter → THE)
