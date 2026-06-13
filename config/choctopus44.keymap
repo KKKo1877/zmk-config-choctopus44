@@ -141,15 +141,6 @@
     // ============================================================
 
     macros {
-        //work email (l → 10364@nyu.edu)
-
-        magic_10: magic_10 {
-            compatible = "zmk,behavior-macro";
-            label = "MAGIC_10";
-            #binding-cells = <0>;
-            bindings = <&kp NUMBER_1 &kp NUMBER_0 &kp NUMBER_3 &kp NUMBER_6 &kp NUMBER_4 &kp AT &kp N &kp Y &kp U &kp DOT &kp E &kp D &kp U>;
-        };
-
         //personal email (h → uonan2015@gmail.com)
 
         magic_uo: magic_uo {
@@ -254,6 +245,11 @@
             label = "MAGIC_KEY";
             #binding-cells = <0>;
             bindings = <&none>;
+            
+            ld {
+                trigger-keys = <L>;
+                bindings = <&kp D>;
+            };
 
             pl {
                 trigger-keys = <P>;
@@ -294,13 +290,6 @@
             ion {
                 trigger-keys = <I>;
                 bindings = <&magic_on>;
-            };
-
-            // L → 10364@nyu.edu
-
-            lworkemail {
-                trigger-keys = <L>;
-                bindings = <&magic_10>;
             };
 
             // H → uonan2015@gmail.com
