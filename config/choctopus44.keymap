@@ -334,6 +334,11 @@
                 trigger-keys = <SPACE RET>;
                 bindings = <&magic_the>;
             };
+
+            period {
+                trigger-keys = <PERIOD>;
+                bindings = <&magic_period>;
+            };
         };
 
         // ============================================================
