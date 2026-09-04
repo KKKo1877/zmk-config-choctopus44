@@ -212,6 +212,14 @@
             #binding-cells = <0>;
             bindings = <&kp F &kp O &kp R>;
         };
+
+        // Period → space + capitalize next letter
+        magic_period: magic_period {
+            compatible = "zmk,behavior-macro";
+            label = "MAGIC_PERIOD";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &sk LEFT_SHIFT>;
+        };
     };
 
     behaviors {
